@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lessons</title>
+    <title>Notifications</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">

@@ -1,0 +1,168 @@
+body {
+    font-family: 'Montserrat'; 
+    background-color: beige;
+    transition: background-color .5s;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+   
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .myabout {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    /*transition: 0.5s;*/
+    padding-top: 60px;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+   
+  }
+  
+  .myabout a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .myabout a:hover {
+    color: #f1f1f1;
+  }
+  
+  .myabout .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #bodyS{
+    display: flex;
+    margin-left: 15%;
+    
+    width: 85%;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #imag{
+    max-width:250px;
+    max-height:450px;
+    border-radius: 20px;
+    margin-right: 100px;
+  }
+  #text{
+    display: flex;
+    line-height: 2;
+    text-align: justify;
+  }
+  #guide{
+    display: flexbox;
+    line-height: 2;
+    text-align: justify;
+  }
+  #colado{
+              background-color: rgb(245,115,89);
+              color: #111;
+              text-transform: uppercase;
+              text-align: center;
+             padding: 10px 0px;
+             margin-bottom: 10px;
+          }
+           
+          .start {
+              height: 100px;
+          }
+           
+          .end {
+              height: 500px;
+          }
+          #listed{
+            align-items: center;
+            color: red;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-family:'Indie Flower';
+            font-size: 29px;
+          }
+  
+          .div1 {
+    list-style-type: none;
+    position: sticky;
+    width:100%;
+    top:0;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(1,201,192);
+   
+  }
+  
+  .div2 {
+    float: left;
+     padding-left: 15px;
+  }
+  
+  .div2 a{
+    display: block;
+    color: rgb(43,10,86);
+   font-size:20px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .div2 a:hover {
+    background-color: rgb(0, 217, 255);
+    color: white;
+  }
