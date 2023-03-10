@@ -1,5 +1,30 @@
+<%@page import="java.sql.*"%>
+<%@ page import="java.time.LocalDate"%>
+<%@ page import="java.text.ParseException"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@page import= "java.util.Date"%>
+
+
+<%
+String driver = "com.mysql.jdbc.Driver";
+String connectionUrl = "jdbc:mysql://localhost:3306/";
+String database = "savings";
+String userid = "root";
+String password = "";
+
+int status=0;
+try {
+Class.forName(driver);
+} catch (ClassNotFoundException e) {
+e.printStackTrace();
+}
+Connection connection = null;
+Statement statement = null;
+ResultSet resultSet = null;
+%>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Savings</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -34,8 +59,8 @@
   <div class="div2"><a href="#">Home</a></div>
   <div class="div2"><a href="checker.jsp">Lessons</a></div>
   <div class="div2"><a href="savings.jsp">Savings</a></div>
-  <div class="div2"><a href="#">Accounts</a></div>
-  <div class="div2"><a href="#">Notifications</a></div>
+  <div class="div2"><a href="accounts.jsp">Accounts</a></div>
+  <div class="div2"><a href="notifications.jsp">Notifications</a></div>
   <div class="div2"><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
 
 </div>
@@ -91,6 +116,39 @@
   </div>
 </div>
 
+  <table class="tabela" id="tabela"> 	
+	       	<tr>
+	    		  <th>Id</th>
+	        	<th>Username</th>
+	        	<th>Amount</th>
+	        	<th>Description</th>
+	        </tr>
+		  <%
+		 
+			try{
+			connection = DriverManager.getConnection(connectionUrl+database, userid, password);
+			statement=connection.createStatement();
+			String sql ="SELECT * FROM `money_details`";
+			resultSet = statement.executeQuery(sql);
+			int i=0;
+			while(resultSet.next()){
+			%>
+			<tr> 
+					<td><%=resultSet.getInt("id_saving")%>guyhu</td>
+				  <td><%=resultSet.getString("username")%></td>
+				  <td><%=resultSet.getInt("amount")%></td>
+				  <td><%=resultSet.getString("name_saving")%></td>
+			</tr>
+		<%
+			i++;
+			}
+			connection.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	%>
+  </table>
+<div id="main"></div>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

@@ -34,8 +34,8 @@
   <div class="div2"><a href="#">Home</a></div>
   <div class="div2"><a href="checker.jsp">Lessons</a></div>
   <div class="div2"><a href="savings.jsp">Savings</a></div>
-  <div class="div2"><a href="#">Accounts</a></div>
-  <div class="div2"><a href="#">Notifications</a></div>
+  <div class="div2"><a href="accounts.jsp">Accounts</a></div>
+  <div class="div2"><a href="notifications.jsp">Notifications</a></div>
   <div class="div2"><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
 
 </div>
